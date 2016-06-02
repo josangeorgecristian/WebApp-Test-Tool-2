@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DA25531-42F7-4086-983C-C06D6BE66585}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IMS.WebApp.UI</RootNamespace>
+    <AssemblyName>WebApp Test Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>WebApp_48.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <PublishUrl>http://localhost/WebApp UI/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Documents\BatchTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Documents\BatchTest.Designer.cs">
+      <DependentUpon>BatchTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Documents\BatchTestUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Documents\BatchTestUC.Designer.cs">
+      <DependentUpon>BatchTestUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Documents\Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Documents\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Documents\TestUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Documents\TestUC.Designer.cs">
+      <DependentUpon>TestUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Help\WebAppHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help\WebAppHelp.Designer.cs">
+      <DependentUpon>WebAppHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\EMailServerSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\EMailServerSettings.Designer.cs">
+      <DependentUpon>EMailServerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\TestsExecution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\TestsExecution.Designer.cs">
+      <DependentUpon>TestsExecution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\EnviromentGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\EnviromentGeneral.Designer.cs">
+      <DependentUpon>EnviromentGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\TestsServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\TestsServer.Designer.cs">
+      <DependentUpon>TestsServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\UploadSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\Controls\UploadSettings.Designer.cs">
+      <DependentUpon>UploadSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings\SettingsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings\SettingsDlg.Designer.cs">
+      <DependentUpon>SettingsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\ExecutionLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\ExecutionLog.Designer.cs">
+      <DependentUpon>ExecutionLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\TestUnitEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\TestUnitEditor.Designer.cs">
+      <DependentUpon>TestUnitEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\TextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\TextEditor.Designer.cs">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WebAppMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WebAppMain.Designer.cs">
+      <DependentUpon>WebAppMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IDocument.cs" />
+    <Compile Include="Interfaces\IExecutionList.cs" />
+    <Compile Include="Interfaces\IFile.cs" />
+    <Compile Include="Interfaces\ISettingsControl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Documents\BatchTest.resx">
+      <DependentUpon>BatchTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Documents\BatchTestUC.resx">
+      <DependentUpon>BatchTestUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Documents\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Documents\TestUC.resx">
+      <DependentUpon>TestUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Help\WebAppHelp.resx">
+      <DependentUpon>WebAppHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Controls\EMailServerSettings.resx">
+      <DependentUpon>EMailServerSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Controls\TestsExecution.resx">
+      <DependentUpon>TestsExecution.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Controls\EnviromentGeneral.resx">
+      <DependentUpon>EnviromentGeneral.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Controls\TestsServer.resx">
+      <DependentUpon>TestsServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\Controls\UploadSettings.resx">
+      <DependentUpon>UploadSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings\SettingsDlg.resx">
+      <DependentUpon>SettingsDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\ExecutionLog.resx">
+      <DependentUpon>ExecutionLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\TestUnitEditor.resx">
+      <DependentUpon>TestUnitEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WebAppMain.resx">
+      <DependentUpon>WebAppMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{4591762F-DD36-4E67-9041-5FA1F94210F6}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{ED7786E7-BAAC-4C93-98F5-CCFB28C6461A}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{1F3E9236-2916-4C11-92E4-A4EA72906560}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{C17815B8-9B1C-4A3C-A2C9-82AC140B924C}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Help Files\style.css" />
+    <Content Include="Resources\Icons\NewBatch.bmp" />
+    <Content Include="Resources\Icons\NewTest.bmp" />
+    <Content Include="Resources\Icons\Open.bmp" />
+    <Content Include="Resources\Icons\ProjectAdd.bmp" />
+    <Content Include="Resources\Icons\ProjectEdit.bmp" />
+    <Content Include="Resources\Icons\ProjectRemove.bmp" />
+    <Content Include="Resources\Icons\Run.bmp" />
+    <Content Include="Resources\Icons\Save.bmp" />
+    <Content Include="Resources\Icons\SaveAll.bmp" />
+    <Content Include="Resources\Icons\SaveAs.bmp" />
+    <Content Include="Resources\Icons\Stop.bmp" />
+    <Content Include="Resources\Images\ExecutionStatistics.png" />
+    <Content Include="Resources\Images\ExecutionStatistics2.png" />
+    <Content Include="Resources\Images\ExecutionStatistics3.png" />
+    <Content Include="Help Files\WebApp Test Tool Help Index.htm" />
+    <Content Include="WebApp_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
